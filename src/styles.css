@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'LatoRegular'; /* Name you will use to reference the font */
+  src: url('/assets/fonts/Lato/Lato-Regular.ttf') format('truetype'); /* Path to the font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'LatoRegular', sans-serif;
+}
+
+h1 {
+  color: #960106;
+}
