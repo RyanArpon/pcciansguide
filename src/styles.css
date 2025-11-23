@@ -31,8 +31,21 @@ h1 {
   border-radius: 20px;
 }
 
+.mat-raised-button.mat-primary:hover {
+  background-color: rgba(0, 92, 187, .75);
+}
+
 .home-card {
   width: 500px;
   margin: 0 auto;
   margin-top: 200px;
+}
+
+.mat-raised-button.cta {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'LatoRegular', sans-serif;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 50px;
 }
