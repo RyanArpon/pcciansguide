@@ -1,16 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-@font-face {
-  font-family: 'LatoRegular';
-  /* Name you will use to reference the font */
-  src: url('/assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
-  /* Path to the font file */
-  font-weight: normal;
-  font-style: normal;
+html {
+  background: url("assets/images/pcc-bg.jpg") no-repeat bottom center #eee;
+  background-size: cover;
+  height: 100%;
 }
 
 body {
   font-family: 'LatoRegular', sans-serif;
-  background-color: #eee;
 }
 
 h1 {
@@ -26,13 +22,13 @@ h1 {
 }
 
 .mat-raised-button.mat-primary {
-  background-color: rgb(0, 92, 187);
+  background-color: rgb(213, 23, 13);
   color: #fff;
   border-radius: 20px;
 }
 
 .mat-raised-button.mat-primary:hover {
-  background-color: rgba(0, 92, 187, .75);
+  background-color: rgba(213, 23, 13, .75);
 }
 
 .home-card {
@@ -42,10 +38,28 @@ h1 {
 }
 
 .mat-raised-button.cta {
-  font-weight: bold;
+  font-weight: normal;
   text-transform: uppercase;
-  font-family: 'LatoRegular', sans-serif;
+  font-family: "Google Sans", sans-serif;
   padding: 10px 20px;
   font-size: 20px;
   border-radius: 50px;
+}
+
+.google-sans-regular {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+}
+
+.google-sans-bold {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
 }

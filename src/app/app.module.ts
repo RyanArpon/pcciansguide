@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 import { MatCardModule } from '@angular/material/card';
 import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './components/search-type/home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { SearchTypeComponent } from './components/search-type/search-type.component';
 
 
