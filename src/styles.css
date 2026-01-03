@@ -1,8 +1,27 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 /* You can add global styles to this file, and also import other style files */
 html {
-  background: url("assets/images/pcc-bg.jpg") no-repeat bottom center #eee;
+  /* Set the background image */
+  background-image: url("assets/images/pcc-bg.jpg");
+  /* Replace with your image file path */
+
+  /* Scale the image to cover the entire container while preserving its aspect ratio */
   background-size: cover;
+
+  /* Center the image within the container */
+  background-position: center;
+
+  /* Prevent the image from repeating */
+  background-repeat: no-repeat;
+
+  /* Optional: Fix the background so it doesn't scroll with the content (parallax effect) */
+  background-attachment: fixed;
+
+  /* Ensure the container (or body) has the necessary height to display the cover */
   height: 100%;
+
+  line-height: 1.6;
 }
 
 body {
@@ -31,10 +50,14 @@ h1 {
   background-color: rgba(213, 23, 13, .75);
 }
 
-.home-card {
+.card-container {
   width: 500px;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 50px;
+}
+
+.banner {
+  width: 100%;
 }
 
 .mat-raised-button.cta {
@@ -62,4 +85,26 @@ h1 {
   font-style: normal;
   font-variation-settings:
     "GRAD" 0;
+}
+
+.roboto-normal {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.container .mat-card {
+  border-radius: 15px;
 }

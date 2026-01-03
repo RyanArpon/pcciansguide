@@ -1,0 +1,36 @@
+.search-form {
+  position: relative;
+}
+
+.fa-magnifying-glass {
+  position: absolute;
+  top: 38px;
+  left: 20px;
+  font-size: 24px;
+  color: #aaa;
+}
+
+.search-box {
+  border-radius: 50px;
+  display: initial;
+  border: none;
+  box-shadow: 5px 5px 20px #888888;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 82%;
+  padding: 5%;
+  font-size: 16px;
+  outline-color: #000;
+  padding-left: 12%;
+}
+
+.search-box:focus-visible {
+  border-color: transparent;
+  outline-color: transparent;
+  outline: none;
+}
+
+.mat-raised-button.start {
+  width: 210px;
+  margin: .5rem 0 1rem 0;
+}
