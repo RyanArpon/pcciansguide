@@ -1,22 +1,25 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center" class="card-container">
-  <a [routerLink]="['/home']" class="google-sans-regular">
-    <img src="assets/images/pcc-logo.png" alt="Logo" width="150" />
+<div class="card-container text-center">
+  <a [routerLink]="['/home']" class="logo google-sans-regular">
+    <img src="assets/images/pcc-logo.png" alt="Logo" width="100" />
+    <span class="google-sans-bold">PCCian's Guide</span>
   </a>
   <br>
   <br>
   <mat-card>
-    <mat-card-content>
-      <h1>
-        PCCian's Guide
+    <img src="assets/images/home.jpg" class="banner" />
+    <mat-card-content class="text-left">
+      <h1 class="google-sans-bold">
+        Welcome!
       </h1>
-      <img src="assets/images/home.jpg" class="banner" />
       <p class="roboto-normal">Welcome to the PCCian Guide—your guide to seamless and efficient campus exploration. Our
         platform is designed
         to help students, visitors, and staff easily locate rooms, offices, and facilities within the Monsignor Building
         through intuitive mapping and step-by-step navigation. With accuracy, accessibility, and convenience at its
         core, this tool ensures you spend less time searching and more time focusing on what truly matters.</p>
-      <button mat-raised-button color="primary" class="cta start" [routerLink]="['/quick-search']">Start</button>
+      <div class="text-center">
+        <button mat-raised-button color="primary" class="cta start" [routerLink]="['/quick-search']">Start</button>
+      </div>
       <div></div>
     </mat-card-content>
   </mat-card>

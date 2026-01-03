@@ -1,19 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center" class="card-container">
-  <a [routerLink]="['/home']" class="google-sans-regular">
-    <img src="assets/images/pcc-logo.png" alt="Logo" width="150" />
+  <a [routerLink]="['/home']" class="logo google-sans-regular">
+    <img src="assets/images/pcc-logo.png" alt="Logo" width="100" />
+    <span class="google-sans-bold">PCCian's Guide</span>
   </a>
   <br>
   <br>
-  <mat-card class="home-card">
-    <mat-card-content>
-      <h1>
-        PCCian's Guide
+  <mat-card>
+    <img src="assets/images/search.jpg" class="banner" />
+    <mat-card-content class="text-left">
+      <h1 class="google-sans-bold">
+        Quick Search
       </h1>
-      <img src="assets/images/search.jpg" class="banner" />
-      <br>
-      <br>
-
       <form class="search-form">
         <input matInput placeholder="Search Location" class="search-box google-sans-bold">
         <i class="fa-solid fa-magnifying-glass"></i>

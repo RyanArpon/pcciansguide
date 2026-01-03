@@ -32,6 +32,22 @@ h1 {
   color: #960106;
 }
 
+.logo {
+  position: relative;
+  display: inline-block;
+  width: 320px;
+  text-align: left;
+}
+
+.logo span {
+  position: absolute;
+  display: inline-block;
+  font-size: 28px;
+  top: 30px;
+  left: 110px;
+  color: #960106;
+}
+
 .mat-card {
   background: #fff;
 }
@@ -58,6 +74,7 @@ h1 {
 
 .banner {
   width: 100%;
+  border-radius: 15px 15px 0 0;
 }
 
 .mat-raised-button.cta {
@@ -107,4 +124,17 @@ h1 {
 
 .container .mat-card {
   border-radius: 15px;
+  padding: 0;
+}
+
+.container .mat-card-content {
+  padding: 24px
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
 }
