@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center" class="card-container">
+  <a [routerLink]="['/home']" class="logo google-sans-regular">
+    <img src="assets/images/pcc-logo.png" alt="Logo" width="100" />
+    <span class="google-sans-bold">PCCian's Guide</span>
+  </a>
+  <br>
+  <br>
+  <mat-card>
+    <img src="assets/images/search.jpg" class="banner" />
+    <mat-card-content class="text-left">
+      <h1 class="google-sans-bold">
+        {{ pageTitle }}
+      </h1>
+      <ul>
+        <li *ngFor="let location of locations; index as i">
+          {{ location.name }}
+        </li>
+      </ul>
+      <br>
+      <!-- <button mat-raised-button color="primary" class="cta start">Search</button> -->
+      <div></div>
+    </mat-card-content>
+  </mat-card>
+
+</div>

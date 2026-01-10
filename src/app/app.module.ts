@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { SearchTypeComponent } from './components/search-type/search-type.component';
 import { QuickSearchComponent } from './components/quick-search/quick-search.component';
+import { SearchResult } from './components/search-result/search-result.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -16,7 +18,8 @@ import { QuickSearchComponent } from './components/quick-search/quick-search.com
     AppComponent,
     HomeComponent,
     SearchTypeComponent,
-    QuickSearchComponent
+    QuickSearchComponent,
+    SearchResult
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,8 @@ import { QuickSearchComponent } from './components/quick-search/quick-search.com
     MatCheckboxModule,
     MatCardModule,
     AppRoutingModule,
-    MatInputModule
+    MatInputModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

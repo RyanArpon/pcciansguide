@@ -16,7 +16,8 @@
         <button mat-raised-button color="primary" class="cta start" [routerLink]="['/quick-search']">Quick
           Search</button>
         <br>
-        <button mat-raised-button color="primary" class="cta start" [routerLink]="['/quick-search']">All
+        <button mat-raised-button color="primary" class="cta start" [routerLink]="['/search-result']"
+          [queryParams]="{ isAll: true }">All
           Locations</button>
       </div>
       <div></div>
