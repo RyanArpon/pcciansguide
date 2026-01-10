@@ -147,6 +147,10 @@ thead {
   display: none;
 }
 
+.container .mat-paginator-container {
+  justify-content: center;
+}
+
 @media (min-width: 300px) and (max-width: 500px) {
   .card-container {
     width: 300px;
