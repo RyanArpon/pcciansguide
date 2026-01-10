@@ -151,4 +151,8 @@ thead {
   .card-container {
     width: 300px;
   }
+
+  .logo span {
+    font-size: 26px;
+  }
 }
