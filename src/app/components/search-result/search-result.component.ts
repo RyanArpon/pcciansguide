@@ -10,7 +10,10 @@ import { takeUntil } from 'rxjs/operators';
 })
 export class SearchResult extends BaseComponent implements OnInit {
   pageTitle: string = 'All Locations';
-  locations: any = []
+  locations: any = [];
+  pageSize: number = 10;
+
+  displayedColumns: string[] = ['name'];
 
   constructor(private locationsService: LocationsService) {
     super();
@@ -18,7 +21,7 @@ export class SearchResult extends BaseComponent implements OnInit {
 
   ngOnInit(): void {
     this.locationsService.getQuestions().pipe(takeUntil(this.stop$)).subscribe(data => {
-      this.locations = data;
+      this.locations = data.slice(0, this.pageSize);
     });
   }
 }
