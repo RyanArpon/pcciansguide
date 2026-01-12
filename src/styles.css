@@ -184,6 +184,10 @@ thead {
   width: 100%;
 }
 
+footer hr {
+  margin-bottom: 18px;
+}
+
 @media (min-width: 300px) and (max-width: 500px) {
   .card-container {
     width: 300px;
