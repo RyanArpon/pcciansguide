@@ -7,7 +7,7 @@
   <br>
   <br>
   <mat-card>
-    <img [src]="imageUrl" class="banner" />
+    <img [src]="bannerUrl" class="banner" />
     <mat-card-content class="text-left">
       <button (click)="back()" class="back-button"><i class="fa-solid fa-arrow-left"></i> Back</button>
       <h1 class="google-sans-bold">
@@ -19,7 +19,10 @@
         <li>Type: {{type}}</li>
         <li *ngIf="description">Description: {{description}}</li>
       </ul>
-      <br>
+      <h2 class="google-sans-bold">
+        Direction
+      </h2>
+      <img [src]="directionUrl" class="direction" />
       <div></div>
     </mat-card-content>
   </mat-card>

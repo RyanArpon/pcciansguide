@@ -28,7 +28,8 @@ body {
   font-family: 'LatoRegular', sans-serif;
 }
 
-h1 {
+h1,
+h2 {
   color: #960106;
 }
 
@@ -177,6 +178,10 @@ thead {
 
 .back-button:hover {
   color: #960106;
+}
+
+.direction {
+  width: 100%;
 }
 
 @media (min-width: 300px) and (max-width: 500px) {

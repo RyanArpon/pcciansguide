@@ -13,7 +13,8 @@ import { Location } from '@angular/common';
 })
 export class LocationComponent extends BaseComponent implements OnInit {
   params: ParamMap;
-  imageUrl: string = ''
+  bannerUrl: string = '';
+  directionUrl: string = `${environment.apiBaseUrl}/images/directions/1.jpg`;
   name: string = '';
   building: string = '';
   floor: string = '';
@@ -60,7 +61,7 @@ export class LocationComponent extends BaseComponent implements OnInit {
       }
     });
 
-    this.imageUrl = `${environment.apiBaseUrl}/images/banners/${location.id}.jpg`;
+    this.bannerUrl = `${environment.apiBaseUrl}/images/banners/${location.id}.jpg`;
     this.name = location.name;
     this.building = location.building;
     this.floor = location.floor;
