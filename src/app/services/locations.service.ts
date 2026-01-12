@@ -10,6 +10,6 @@ export class LocationsService {
   constructor(private http: HttpClient) { }
 
   getQuestions(): Observable<any> {
-    return this.http.get(`${environment.apiBaseUrl}locations.json`);
+    return this.http.get(`${environment.apiBaseUrl}/data/locations.json`);
   }
 }
