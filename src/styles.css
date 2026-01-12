@@ -159,7 +159,7 @@ thead {
 
 .mat-raised-button.primary {
   min-width: 230px;
-  margin: .5rem 0 1rem 0;
+  margin: .5rem;
 }
 
 .container .mat-paginator-container {
@@ -185,7 +185,7 @@ thead {
 }
 
 footer hr {
-  margin-bottom: 18px;
+  margin: 18px 0;
 }
 
 @media (min-width: 300px) and (max-width: 500px) {
