@@ -56,9 +56,13 @@ export class SearchResult extends BaseComponent implements OnInit {
   }
 
   getQuickSearch(startIndex: number, endIndex: number): void {
+    const keyword = this.params.get('keyword');
+
+    this.pageTitle = `Search Result for "${keyword}"`;
+
     this.locationsService.getQuestions().pipe(takeUntil(this.stop$)).subscribe(data => {
       const filteredData = data.filter(item => {
-        if (item.name.toUpperCase().includes(this.params.get('keyword').toUpperCase())) {
+        if (item.name.toUpperCase().includes(keyword.toUpperCase())) {
           return item;
         }
       });

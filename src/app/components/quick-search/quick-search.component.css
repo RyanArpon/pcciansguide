@@ -2,12 +2,15 @@
   position: relative;
 }
 
-.fa-magnifying-glass {
+.search-button {
   position: absolute;
-  top: 38px;
-  left: 20px;
+  top: 35px;
+  right: 20px;
   font-size: 24px;
   color: #aaa;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
 
 .search-box {
@@ -21,7 +24,8 @@
   padding: 5%;
   font-size: 16px;
   outline-color: #000;
-  padding-left: 12%;
+  padding-right: 12%;
+  font-weight: bold;
 }
 
 .search-box:focus-visible {

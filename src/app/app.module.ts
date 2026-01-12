@@ -11,6 +11,7 @@ import { SearchTypeComponent } from './components/search-type/search-type.compon
 import { QuickSearchComponent } from './components/quick-search/quick-search.component';
 import { SearchResult } from './components/search-result/search-result.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     HttpClientModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,23 +13,37 @@
       <h1 class="google-sans-bold">
         {{ pageTitle }}
       </h1>
-      <table mat-table [dataSource]="locations" class="search-result">
-        <ng-container matColumnDef="name">
-          <th mat-header-cell *matHeaderCellDef class="hide"></th>
-          <td mat-cell *matCellDef="let element">
-            <a [routerLink]="['/quick-search']" class="location-link">
-              {{element.name}}
-              <span>Visit <i class="fa-solid fa-arrow-right"></i></span></a>
-          </td>
-        </ng-container>
 
-        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-      </table>
-      <br>
-      <mat-paginator [length]="length" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions"
-        (page)="handlePageEvent($event)">
-      </mat-paginator>
+      <ng-container *ngIf="length; else noResult">
+        <table mat-table [dataSource]="locations" class="search-result">
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef class="hide"></th>
+            <td mat-cell *matCellDef="let element">
+              <a [routerLink]="['/quick-search']" class="location-link">
+                {{element.name}}
+                <span>Visit <i class="fa-solid fa-arrow-right"></i></span></a>
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        <br>
+        <mat-paginator [length]="length" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions"
+          (page)="handlePageEvent($event)">
+        </mat-paginator>
+      </ng-container>
+
+      <ng-template #noResult>
+        <div class="text-center">
+          <i class="fa-regular fa-face-meh"></i>
+          <br>
+          <br>
+          <strong class="text-center">No result found.</strong>
+        </div>
+      </ng-template>
+
+
       <br>
       <div></div>
     </mat-card-content>

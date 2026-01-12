@@ -13,12 +13,13 @@
       <h1 class="google-sans-bold">
         Quick Search
       </h1>
-      <form class="search-form">
-        <input matInput placeholder="Search Location" class="search-box google-sans-bold">
-        <i class="fa-solid fa-magnifying-glass"></i>
+      <form *ngIf="searchForm as form" [formGroup]="form" (submit)='onSubmit()' class="search-form">
+        <input formControlName="keyword" matInput placeholder="Search Location" class="search-box google-sans-bold">
+        <button class="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
       </form>
       <br>
-      <!-- <button mat-raised-button color="primary" class="cta start">Search</button> -->
       <div></div>
     </mat-card-content>
   </mat-card>
