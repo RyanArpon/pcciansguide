@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'http://pccian-guide.ryanarpon.com/data/'
+  apiBaseUrl: 'https://pccian-guide.ryanarpon.com/data/'
 };
 
 /*
