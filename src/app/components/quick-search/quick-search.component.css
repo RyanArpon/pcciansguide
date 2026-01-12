@@ -33,3 +33,15 @@
   outline-color: transparent;
   outline: none;
 }
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .search-button {
+    top: 28px;
+    right: 6px;
+    font-size: 18px;
+  }
+
+  .search-box {
+    font-size: 14px;
+  }
+}
