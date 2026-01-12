@@ -9,9 +9,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { SearchTypeComponent } from './components/search-type/search-type.component';
 import { QuickSearchComponent } from './components/quick-search/quick-search.component';
-import { SearchResult } from './components/search-result/search-result.component';
+import { SearchResultComponent } from './components/search-result/search-result.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LocationComponent } from './components/location/location.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     SearchTypeComponent,
     QuickSearchComponent,
-    SearchResult
+    SearchResultComponent,
+    LocationComponent
   ],
   imports: [
     BrowserModule,

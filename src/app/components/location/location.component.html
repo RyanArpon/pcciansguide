@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center" class="card-container">
+  <a [routerLink]="['/home']" class="logo google-sans-regular">
+    <img src="assets/images/pcc-logo.png" alt="Logo" width="100" />
+    <span class="google-sans-bold">PCCian's Guide</span>
+  </a>
+  <br>
+  <br>
+  <mat-card>
+    <img [src]="imageUrl" class="banner" />
+    <mat-card-content class="text-left">
+      <button (click)="back()" class="back-button"><i class="fa-solid fa-arrow-left"></i> Back</button>
+      <h1 class="google-sans-bold">
+        {{name}}
+      </h1>
+      <ul>
+        <li>Building: {{building}}</li>
+        <li>Floor: {{floor}}</li>
+        <li>Type: {{type}}</li>
+        <li *ngIf="description">Description: {{description}}</li>
+      </ul>
+      <br>
+      <div></div>
+    </mat-card-content>
+  </mat-card>
+
+</div>

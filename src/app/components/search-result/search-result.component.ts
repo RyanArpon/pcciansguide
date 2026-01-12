@@ -10,7 +10,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
   templateUrl: './search-result.component.html',
   styleUrls: ['./search-result.component.css']
 })
-export class SearchResult extends BaseComponent implements OnInit {
+export class SearchResultComponent extends BaseComponent implements OnInit {
   pageTitle: string = 'All Locations';
   locations: any = [];
   displayedColumns: string[] = ['name'];
@@ -49,7 +49,8 @@ export class SearchResult extends BaseComponent implements OnInit {
   }
 
   getAllLocations(startIndex: number, endIndex: number): void {
-    this.locationsService.getQuestions().pipe(takeUntil(this.stop$)).subscribe(data => {
+    this.locationsService.getLocations().pipe(takeUntil(this.stop$)).subscribe(data => {
+      this.locationsService.locations = data;
       this.length = data.length;
       this.locations = data.slice(startIndex, endIndex);
     });
@@ -60,7 +61,9 @@ export class SearchResult extends BaseComponent implements OnInit {
 
     this.pageTitle = `Search Result for "${keyword}"`;
 
-    this.locationsService.getQuestions().pipe(takeUntil(this.stop$)).subscribe(data => {
+    this.locationsService.getLocations().pipe(takeUntil(this.stop$)).subscribe(data => {
+      this.locationsService.locations = data;
+
       const filteredData = data.filter(item => {
         if (item.name.toUpperCase().includes(keyword.toUpperCase())) {
           return item;

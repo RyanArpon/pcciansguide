@@ -7,9 +7,11 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class LocationsService {
+  locations: any = [];
+
   constructor(private http: HttpClient) { }
 
-  getQuestions(): Observable<any> {
+  getLocations(): Observable<any> {
     return this.http.get(`${environment.apiBaseUrl}/data/locations.json`);
   }
 }

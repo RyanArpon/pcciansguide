@@ -25,7 +25,6 @@ export class QuickSearchComponent extends BaseComponent implements OnInit {
   }
 
   onSubmit(): void {
-
     this.router.navigate(['/search-result'], {
       queryParams: {
         isAll: 0,

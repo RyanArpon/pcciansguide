@@ -165,6 +165,19 @@ thead {
   justify-content: center;
 }
 
+.back-button {
+  border: none;
+  background: none;
+  color: rgba(0, 0, 0, .87);
+  padding: 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  color: #960106;
+}
+
 @media (min-width: 300px) and (max-width: 500px) {
   .card-container {
     width: 300px;
