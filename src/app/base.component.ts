@@ -3,6 +3,7 @@ import { Subject } from 'rxjs';
 
 export class BaseComponent implements OnDestroy {
   protected stop$: Subject<boolean>;
+  protected currentYear = new Date().getFullYear();
 
   constructor() {
     this.stop$ = new Subject<boolean>();
