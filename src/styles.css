@@ -172,6 +172,7 @@ thead {
   padding: 0;
   cursor: pointer;
   font-size: 14px;
+  font-family: "Google Sans", sans-serif;
 }
 
 .back-button:hover {
