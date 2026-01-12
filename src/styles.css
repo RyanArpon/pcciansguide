@@ -156,6 +156,11 @@ thead {
   display: none;
 }
 
+.mat-raised-button.primary {
+  min-width: 230px;
+  margin: .5rem 0 1rem 0;
+}
+
 .container .mat-paginator-container {
   justify-content: center;
 }
