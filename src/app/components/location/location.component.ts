@@ -5,6 +5,7 @@ import { BaseComponent } from 'src/app/base.component';
 import { LocationsService } from 'src/app/services/locations.service';
 import { environment } from 'src/environments/environment';
 import { Location } from '@angular/common';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'location',
@@ -20,11 +21,13 @@ export class LocationComponent extends BaseComponent implements OnInit {
   floor: string = '';
   type: string = '';
   description: string = '';
+  momento: SafeResourceUrl = '';
 
   constructor(
     private locationsService: LocationsService,
     private route: ActivatedRoute,
-    private location: Location
+    private location: Location,
+    private sanitizer: DomSanitizer
   ) {
     super();
   }
@@ -67,6 +70,7 @@ export class LocationComponent extends BaseComponent implements OnInit {
     this.floor = location.floor;
     this.type = location.type;
     this.description = location.description;
+    this.momento = this.sanitizer.bypassSecurityTrustResourceUrl(location.momento);
   }
 
   back(): void {
