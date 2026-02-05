@@ -15,7 +15,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class LocationComponent extends BaseComponent implements OnInit {
   params: ParamMap;
   bannerUrl: string = '';
-  directionUrl: string = `${environment.apiBaseUrl}/images/directions/1.jpg`;
+  directionUrl: string = '';
   name: string = '';
   building: string = '';
   floor: string = '';
@@ -71,6 +71,7 @@ export class LocationComponent extends BaseComponent implements OnInit {
     this.type = location.type;
     this.description = location.description;
     this.momento = this.sanitizer.bypassSecurityTrustResourceUrl(location.momento);
+    this.directionUrl = `${environment.apiBaseUrl}/images/directions/${location.id}.png`;
   }
 
   back(): void {
