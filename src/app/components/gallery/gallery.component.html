@@ -1,4 +1,4 @@
-<div style="text-align:center" class="card-container">
+<div class="card-container text-center">
   <a [routerLink]="['/home']" class="logo google-sans-regular">
     <img src="assets/images/pcc-logo.png" alt="Logo" width="100" />
     <span class="google-sans-bold">PCCian's Guide</span>
@@ -6,18 +6,18 @@
   <br>
   <br>
   <mat-card>
-    <img src="assets/images/search.jpg" class="banner" />
     <mat-card-content class="text-left">
       <a [routerLink]="['/search-type']"><i class="fa-solid fa-arrow-left"></i> Back</a>
       <h1 class="google-sans-bold">
-        Quick Search
+        Gallery
       </h1>
-      <form *ngIf="searchForm as form" [formGroup]="form" (submit)='onSubmit()' class="search-form">
-        <input formControlName="keyword" matInput placeholder="Search Location" class="search-box google-sans-bold">
-        <button class="search-button">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </form>
+      <div class="text-center">
+        <div class="iframe-container">
+          <iframe
+            src="https://momento360.com/e/uc/9136f81e52fb4fcb9044a8ce7ed7dbef?utm_campaign=embed&utm_source=other&size=medium&display-plan=true"
+            frameborder="0"></iframe>
+        </div>
+      </div>
       <footer class="text-center">
         <hr>
         © {{currentYear}} PCCian's Guide

@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { QuickSearchComponent } from './components/quick-search/quick-search.component';
 import { SearchResultComponent } from './components/search-result/search-result.component';
 import { LocationComponent } from './components/location/location.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'quick-search', component: QuickSearchComponent },
   { path: 'search-result', component: SearchResultComponent },
   { path: 'location', component: LocationComponent },
+  { path: 'gallery', component: GalleryComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route
   { path: '**', component: HomeComponent } // Wildcard route for unmatched URLs
 ];

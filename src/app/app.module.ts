@@ -13,6 +13,7 @@ import { SearchResultComponent } from './components/search-result/search-result.
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LocationComponent } from './components/location/location.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { LocationComponent } from './components/location/location.component';
     SearchTypeComponent,
     QuickSearchComponent,
     SearchResultComponent,
-    LocationComponent
+    LocationComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
